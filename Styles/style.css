@@ -73,18 +73,21 @@ div .button{
     margin-block: 80px;
 }
 
- div.button a{
+.button a{
     text-decoration: none;
-    color: #0084ff;
+    color: #292828;
     background-color: #f1ead0;
     padding: 1.5em 1.5em;
     border-radius: 0.5em;
     font-family: "Viga";
+    transition: 3s ease;
+    font-size: 1.5em;
  }
 
  div.button a:hover{
     color: #fff;
     background-color: #0084ff;
+    transform: scale(0);
  }
 
  h1{
@@ -190,10 +193,46 @@ div .button{
 .contImgSec1{
     width: 45%;
     margin: 20px;
+    position: relative;
+    cursor: pointer;
 }
-.contImgSec1 img{
-    opacity: 0.9;
+
+.ImgPort{
+    position: relative;
+    cursor: pointer;
 }
+
+div .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #04a3ca7c;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+  }
+
+  .contImgSec1:hover .overlay {
+    transform: scale(1);
+  }
+  .ImgPort:hover .overlay {
+    transform: scale(1);
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Unlock";
+  }
+  
 
 img{
     width: 100%;
@@ -209,10 +248,7 @@ img{
     border-radius: 0.5em;
     box-shadow: 0 10px 10px rgba(155, 155, 155, 0.9);
 }
-.contImgSec1 img:hover{
-    opacity: 1;
-    cursor: pointer;
-}
+
 
 .contTxtSec1 h2{
     text-align: center;
@@ -359,7 +395,6 @@ textarea{
     margin: 0 auto;
     display: block;
     cursor: pointer;
-    transition: all 0.2s ease;
     font-size: 20px;
     font-family: "Viga";
     background-color: #f1ead0;
@@ -367,7 +402,8 @@ textarea{
 
 .subBtn:hover{
     background: rgb(23, 67, 239);
-    color: white;  
+    color: white;
+    
 }
 
 .alert .alert-danger{
