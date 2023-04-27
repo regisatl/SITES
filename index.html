@@ -30,6 +30,8 @@ if(isset($_POST['valider'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Viga' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Unlock' rel='stylesheet'>
     <title>Site</title>
     <link href="Ressources/favicon.png" rel="icon">
  
@@ -50,7 +52,10 @@ if(isset($_POST['valider'])){
 
     <div class="accueil">
         <h1>Découvrez mes créations</h1>
-        <p class="sousTitreP">Dreams are not what you see in your sleep, Dreams are things which do not let you sleep</p>
+        <p class="sousTitreP">Dreams are not what you see in your sleep, Dreams are things which do not let you sleep !</p>
+        <div class="button">
+            <a href="mailto:regisattolou21@outlook.fr">CONTACTER</a>
+        </div>
     </div>
 
     <!--Section texte et image-->
@@ -85,11 +90,11 @@ if(isset($_POST['valider'])){
     </section>
 
     <!--Section Portfolio-->
-    <h2 class="titrePortfolio">Voici un aperçu de mes créations.</h2>
+    <h2  id="creations" class="titrePortfolio">Voici un aperçu de mes créations.</h2>
 
     <hr class="diviseurPort">
 
-    <section id="creations" class="portFolioImg">
+    <section class="portFolioImg">
         <div class="flexImgPortflolio">
             <div class="ImgPort">
                 <img src="Ressources/A.jpg" alt="Image simple A">
@@ -129,10 +134,10 @@ if(isset($_POST['valider'])){
     </div>
 
     <!---Section formulaire-->
-<h2 class="titreForm">Contactez-nous pour plus d'informations</h2>
+<h2 id="contact" class="titreForm">Contactez-nous pour plus d'informations</h2>
 <hr>
 <section class="formulaire">
-    <form action="" id="contact" method="POST">
+    <form action="" method="POST">
 <!-- <?php
 	if(isset($successMsg)){
 ?>
@@ -146,15 +151,12 @@ elseif(isset($errorMsg)){
 <?php } 
 ?> -->
         <div class="row">
-            <label for="prenom">Prénom:</label>
             <input type="text" id="prenom" placeholder="Prenom" name="prenom" require>
         </div>
         <div class="row">
-            <label for="nom">Nom:</label>
             <input type="text" id="nom" placeholder="Nom" name="nom" require>
         </div>
         <div class="row">
-            <label for="msg">Message:</label>
             <textarea id="msg" placeholder="Message" name="message" require></textarea>
         </div>
         <div class="row">
