@@ -324,7 +324,7 @@ textarea{
 }
 
 .subBtn{
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
     display: block;
     cursor: pointer;
@@ -363,4 +363,10 @@ footer{
     font-size: large;
     align-items: center;
     font-family: "Viga";
+    color: #0f0f0f;
+}
+
+footer a{
+    text-decoration: none;
+    color: #0f0f0f;
 }
