@@ -59,9 +59,9 @@
 
  .accueil{
      width: 100%;
-     height: 90vh;
+     height: 100vh;
      background-color: dimgray;
-     background-image: url("../Ressources/back.jpg");
+     background-image: url("../Ressources/feuille.jpg");
      background-position: center;
      background-size: cover;
      display: flex;
@@ -146,7 +146,7 @@ div .button{
 
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 400px){
     .accueil{
         height: 500px;
         align-items: flex-start;
@@ -159,6 +159,33 @@ div .button{
     }
     .sousTitreP{
         margin: 0px 20px;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+    }
+
+    .row .button{
+        border: none;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    footer .footer{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .row{
+        display: flex;
+        align-items: center;
+    }
+
+    .row .button{
+        border: none;
+        width: 100%;
+        font-size: 10px;
     }
 }
 
@@ -391,13 +418,18 @@ textarea{
 }
 
 .subBtn{
-    width: 35%;
+    width: 60%;
     margin: 0 auto;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     font-size: 20px;
     font-family: "Viga";
     background-color: #f1ead0;
+    text-align: center;
+    border: none;
+    padding: 1em 2em;
 }
 
 .subBtn:hover{
