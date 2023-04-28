@@ -4,6 +4,7 @@
 
  html{
     scroll-behavior: smooth;
+    cursor: all-scroll;
  }
  
  body{
@@ -409,8 +410,8 @@ form{
 input, textarea{
     width: 100%;
     padding: 20px;
-    border: 2px solid rgb(0, 115, 255);
-    border-radius: 5px;
+    border: 1px solid rgb(233, 234, 236);
+    border-radius: 0.5em;
 }
 
 textarea{
